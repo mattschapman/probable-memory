@@ -5,10 +5,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>probable memory</title>
+    <title>Matt's Portfolio</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 </head>
 <body>
-    <h1>Welcome to Probable Memory</h1>
-    <p>A completely pointless site</p>
+    <!-- Responsive navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+
+            <!-- Logo / name of site, on left -->
+            <a class="navbar-brand" href="#">Matt Chapman</a>
+
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-button="collapse" 
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Links in navbar -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page header with title and tagline -->
+    <header class="py-5 bg-light border-bottom mb-4">
+        <div class="container">
+            <div class="text-center my-5">
+                <h1 class="fw-bolder">Matt Chapman</h1>
+                <br>
+                <p class="lead mb-0">MSc student studying Data Science at Oxford University. Particularly interested in NLP, geospatial analytics and interpretable ML.
+
+                    3+ years of commercial experience in analytics, strategy and sales. Previously at Vodafone, VIMA Group (management consulting), Ovo Energy, HSBC.
+                    
+                    Ranked in top 10% of undergraduate cohort at Cambridge University.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Projects -->
+    <div class="container">
+        <br>
+        <h2 class="fw-bolder" id="projects">Projects</h2>
+        <p class="lead mb-0">Selected projects in data science and machine learning.</p>
+        <br>
+
+        <!-- BERT hate speech -->
+        <div class="row">
+            <div class="card mb-4">
+                <a href="#!"><img class="card-img-top" src="https://jalammar.github.io/images/bert-classifier.png" alt="..." /></a>
+                <div class="card-body">
+                    <div class="small text-muted">January 1, 2022</div>
+                    <h2 class="card-title">Deep NLP for Hate Speech Detection</h2>
+                    <p class="card-text">Hate speech is bad! In this project, I used BERT to detect it automatically.</p>
+                    <a class="btn btn-primary" href="!#">Read more</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fragile Families Challenge -->
+        <div class="row">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="small text-muted">January 1, 2022</div>
+                    <h2 class="card-title">Fragile Families Challenge</h2>
+                    <p class="card-text">
+                        The Fragile Families Challenge was a predictive modelling challenge commissioned by researchers at Princeton University in 2017. In the challenge, participants were tasked with predicting six life outcomes (GPA, material hardship, grit, eviction, layoff, and job training) for 4,242 children based on their cirumstances between birth and age 9.
+                        I took part in this challenge, using various ML and NLP techniques including: (i) imputing missing values using word embeddings and KNN, (ii) modelling with LASSO, Random Forests and XGBoost models, (iii) Bayesian hyperparameter optimisation, and (iv) using feature importance scores to interpret the models’ predictions.
+                    </p>
+                    <a class="btn btn-primary" href="!#">Read more</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interpretable ML -->
+        <div class="row">
+            <div class="card mb-4">
+                <a href="#!"><img class="card-img-top" src="https://www.researchgate.net/publication/346555535/figure/fig2/AS:964140831100929@1606880495308/Example-LIME-output-using-logistic-regression.ppm" alt="..." /></a>
+                <div class="card-body">
+                    <div class="small text-muted">January 1, 2022</div>
+                    <h2 class="card-title">Interpretable Machine Learning</h2>
+                    <p class="card-text">A significant barrier to ML’s adoption in many fields is the lack of interpretability of black box models. In this project, I use several techniques to gain insights into various models.</p>
+                    <a class="btn btn-primary" href="!#">Read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
